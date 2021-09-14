@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Footer() {
+    if (window.location.pathname === '/') return null;
     return (
        <footer className="main-footer">
   <strong>Copyright © 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>

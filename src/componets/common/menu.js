@@ -1,7 +1,9 @@
 import React from 'react'
 
 export default function Menu() {
-    return (
+  if (window.location.pathname === '/') return null;
+  return (
+      
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
   {/* Brand Logo */}
   <a href="index3.html" className="brand-link">
